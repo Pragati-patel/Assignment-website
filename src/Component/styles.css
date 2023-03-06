@@ -1,0 +1,194 @@
+.container-div {
+    @apply w-full flex flex-col;
+}
+
+.logo-header {
+    width: 170px;
+    height: 45px;
+}
+
+.logo-header img {
+    width: 100%;
+}
+
+.banner-img-bg {
+    @apply w-full px-[140px];
+    background-image: url('../Image/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 770px;
+}
+
+.dotsStyle {
+    color: red;
+    list-style-type: disc;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+.navbar {
+    @apply flex justify-between py-8 items-center;
+}
+
+.menu-wrap {
+    @apply flex justify-center items-center;
+}
+
+.menu-wrap ul {
+    @apply flex items-center;
+}
+
+.menu-list-items {
+    @apply flex px-6;
+    height: 22px;
+    text-align: left;
+    font: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 1;
+    font-family: Proxima Nova;
+}
+
+.slider-section {
+    @apply flex w-full mt-20;
+}
+
+.left-part-slider {
+    @apply flex w-[40%] flex-col;
+
+
+}
+
+.slider-buttons {
+    @apply flex mt-8;
+}
+
+.gplay,
+.appstore {
+    @apply flex;
+    width: 182px;
+    height: 78px;
+}
+
+.appstore {
+    @apply ml-4;
+}
+
+.heading-main {
+    @apply text-white uppercase font-[800] text-[84px];
+    text-shadow: 0px 3px 6px #0000001A;
+    letter-spacing: 2.48px;
+    line-height: 1;
+}
+
+.para {
+    @apply text-white pt-[25px] font-[600] pb-4;
+    letter-spacing: -0.04px;
+    ;
+}
+
+
+.second-section {
+    @apply flex w-full px-[90px] my-8;
+}
+
+.second-left-part {
+    @apply flex w-1/2 mr-12;
+
+}
+
+.second-right-part {
+    @apply flex w-[36%] flex-col ml-12 justify-center mr-8;
+
+}
+
+.second-right-part h1 {
+    @apply text-[45px] font-bold capitalize leading-[115%] text-black pr-8;
+}
+
+.second-right-part p {
+    @apply text-[14px] text-black font-medium py-8;
+}
+
+.second-right-part button {
+    @apply bg-[#FF852A] text-white rounded-[12px] px-4 py-2 w-fit text-[12px];
+}
+
+.how-work-wrap {
+    @apply flex bg-no-repeat bg-contain my-12 justify-center items-center;
+    background-image: url('../Image//work-pg.png');
+    width: 1000px;
+    height: 580px;
+}
+.how-work-content{
+    width: 900px;
+    @apply flex flex-col justify-center ;
+}
+.iphone{
+    @apply flex ;
+    height: 550px;
+    width: 400px;
+}
+.content-heading{
+    @apply flex text-white font-bold capitalize text-[50px] px-4; 
+}
+.content-para{
+    @apply flex  font-normal  text-[14px] py-2 my-2 rounded-lg pl-4; 
+    letter-spacing: 0.8px;
+
+}
+.animation-third{
+    @apply flex flex-col justify-center items-center relative left-16 -top-12;
+}
+.circle{
+    @apply w-4 h-4 border border-dashed rounded-[50%] border-[#FF852A] cursor-pointer;
+}
+.line{
+    @apply w-1 h-32  border-r-[1px] border-solid border-[#FF852A];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
