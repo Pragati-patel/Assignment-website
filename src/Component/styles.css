@@ -55,7 +55,7 @@
 }
 
 .left-part-slider {
-    @apply flex w-[40%] flex-col;
+    @apply flex w-[55%] flex-col;
 
 
 }
@@ -83,7 +83,7 @@
 }
 
 .para {
-    @apply text-white pt-[25px] font-[600] pb-4;
+    @apply text-white pt-[25px] font-[600] pb-4 pr-32;
     letter-spacing: -0.04px;
     ;
 }

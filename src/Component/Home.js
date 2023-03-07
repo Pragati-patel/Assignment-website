@@ -14,14 +14,15 @@ export default function Home() {
     const menu = ['About', 'how it works', "blog", "download the app"]
     const list = ['Wololo is a unique way to obtain exclusive deals by incentivising users to share with friends and the community.', 'If 2 people commit to a deal, they receive a percentage off.', 'If additional people commit to the same deal, the discount increases.', 'As the group grows, the higher your reward becomes.']
     var settings = {
-        dots: true,
+        // dots: true,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
-        // autoplaySpeed: 2000,
+        autoplaySpeed: 2000,
         cssEase: "linear",
         slidesToShow: 1,
         slidesToScroll: 1,
+
 
     };
 
@@ -39,22 +40,22 @@ export default function Home() {
 
             <div className='slider-section '>
                 <div className='left-part-slider'>
-                    {/* <Slider {...settings} dotsClass="dotsStyle"> */}
+                    <Slider {...settings} dotsClass="dotsStyle">
                     <div>
                         <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
                         <p className='para'>
                             Wololo is a destination to make users’ day-to-day life more valuable and rewarding; which brings in additional revenue & cash flow to the brands you love.
                         </p>
                     </div>
-                    {/* <div> <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
+                    <div> <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
                             <p className='para'>
                                 Wololo is a destination to make users’ day-to-day life more valuable and rewarding; which brings in additional revenue & cash flow to the brands you love.
                             </p></div>
                         <div> <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
                             <p className='para'>
                                 Wololo is a destination to make users’ day-to-day life more valuable and rewarding; which brings in additional revenue & cash flow to the brands you love.
-                            </p></div> */}
-                    {/* </Slider> */}
+                            </p></div>
+                    </Slider>
                     <div className='slider-buttons'>
                         <img src={googlePlay} className='gplay' />
                         <img src={playStore} className='appstore' />
