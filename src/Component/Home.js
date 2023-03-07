@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './styles.css'
 import logo from '../Image/LogoHeader.svg'
 import googlePlay from '../Image/googlePlay.svg'
@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 export default function Home() {
-    const [activePoint, setActivePoint] = useState(1);
+    const [activePoint, setActivePoint] = useState(0);
     const menu = ['About', 'how it works', "blog", "download the app"]
     const list = ['Wololo is a unique way to obtain exclusive deals by incentivising users to share with friends and the community.', 'If 2 people commit to a deal, they receive a percentage off.', 'If additional people commit to the same deal, the discount increases.', 'As the group grows, the higher your reward becomes.']
     var settings = {
@@ -25,6 +25,19 @@ export default function Home() {
 
 
     };
+    
+      
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActivePoint(prev => prev + 1)
+        }, 1000);
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        if (activePoint == 4) setActivePoint(0)
+    }, [activePoint]);
 
     return <div className="container-div ">
         <div className='banner-img-bg'>
@@ -40,14 +53,14 @@ export default function Home() {
 
             <div className='slider-section '>
                 <div className='left-part-slider'>
-                    <Slider {...settings} dotsClass="dotsStyle">
-                    <div>
-                        <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
-                        <p className='para'>
-                            Wololo is a destination to make users’ day-to-day life more valuable and rewarding; which brings in additional revenue & cash flow to the brands you love.
-                        </p>
-                    </div>
-                    <div> <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
+                    <Slider {...settings} dotsClass={`dotsStyle`}>
+                        <div>
+                            <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
+                            <p className='para'>
+                                Wololo is a destination to make users’ day-to-day life more valuable and rewarding; which brings in additional revenue & cash flow to the brands you love.
+                            </p>
+                        </div>
+                        <div> <h1 className='heading-main'>DISCOVER! SHARE! SAVE!</h1>
                             <p className='para'>
                                 Wololo is a destination to make users’ day-to-day life more valuable and rewarding; which brings in additional revenue & cash flow to the brands you love.
                             </p></div>
@@ -62,11 +75,11 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-                    <div className='flex flex-col absolute right-[45px] top-[290px]'>
-                        <div className='w-2 h-2 rounded-[50%] my-2 flex bg-white cursor-pointer'></div>
-                        <div className='w-2 h-2 rounded-[50%] my-2 flex bg-white cursor-pointer'></div>
-                        <div className='w-2 h-2 rounded-[50%] my-2 flex bg-white cursor-pointer'></div>
-                    </div>
+            <div className='flex flex-col absolute right-[45px] top-[290px]'>
+                <div className='w-2 h-2 rounded-[50%] my-2 flex bg-white cursor-pointer'></div>
+                <div className='w-2 h-2 rounded-[50%] my-2 flex bg-white cursor-pointer'></div>
+                <div className='w-2 h-2 rounded-[50%] my-2 flex bg-white cursor-pointer'></div>
+            </div>
         </div>
 
 
