@@ -2,33 +2,26 @@
     @apply w-full flex flex-col;
 }
 
-.logo-header {
+/* .logo-header {
     width: 170px;
     height: 45px;
-}
+} */
 
 .logo-header img {
-    width: 100%;
+    @apply 2xl:w-[170px] 2xl:h-[45px];
 }
 
 .banner-img-bg {
-    @apply w-full px-[140px];
+    @apply w-full 2xl:w-[1920] 2xl:h-[1080px] h-[770px] px-[140px];
     background-image: url('../Image/Banner\ Image.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 770px;
 }
 
-.dotsStyle {
-    color: red;
-    list-style-type: disc;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-}
+
 
 .navbar {
-    @apply flex justify-between py-8 items-center;
+    @apply flex justify-between pt-[36px] items-center;
 }
 
 .menu-wrap {
@@ -40,22 +33,22 @@
 }
 
 .menu-list-items {
-    @apply flex px-6;
+    @apply flex px-[42px] text-[18px];
     height: 22px;
     text-align: left;
     font: normal;
     font-weight: 600;
     text-transform: uppercase;
     opacity: 1;
-    font-family: Proxima Nova;
+    font-family: 'ProximaNovaRegular';
 }
 
 .slider-section {
-    @apply flex w-full mt-20;
+    @apply flex w-full;
 }
 
 .left-part-slider {
-    @apply flex w-[55%] flex-col;
+    @apply flex w-[45%] flex-col mt-[122px];
 
 
 }
@@ -67,93 +60,101 @@
 .gplay,
 .appstore {
     @apply flex;
-    width: 182px;
+    width: 233px;
     height: 78px;
 }
 
 .appstore {
-    @apply ml-4;
+    @apply ml-8;
 }
 
 .heading-main {
-    @apply text-white uppercase font-[800] text-[84px];
+    @apply text-white uppercase font-[800] 2xl:text-[124px] text-[84px];
     text-shadow: 0px 3px 6px #0000001A;
+    font-family: 'ProximaNovaBold';
     letter-spacing: 2.48px;
     line-height: 1;
 }
 
 .para {
-    @apply text-white pt-[25px] font-[600] pb-4 pr-32;
-    letter-spacing: -0.04px;
-    ;
+    @apply text-white pt-[25px] font-[600] pb-[61px] pr-8 text-[24px];
+    font-family: 'ProximaNova';
+    letter-spacing: 0.96px;
+    line-height: 40px
 }
 
 
 .second-section {
-    @apply flex w-full px-[90px] my-8;
+    @apply flex w-full px-[90px] mt-[172px] mb-[141px];
 }
 
 .second-left-part {
-    @apply flex w-1/2 mr-12;
+    @apply flex w-1/2 2xl:w-[845px] 2xl:h-[634px];
+
 
 }
 
 .second-right-part {
-    @apply flex w-[36%] flex-col ml-12 justify-center mr-8;
+    @apply flex w-[36%] flex-col ml-24 justify-center mr-8;
 
 }
 
 .second-right-part h1 {
-    @apply text-[45px] font-bold capitalize leading-[115%] text-black pr-8;
+    @apply text-[45px] 2xl:text-[71px] font-bold capitalize leading-[115%] text-black pr-8 font-['ProximaNovaBold'];
 }
 
 .second-right-part p {
-    @apply text-[14px] text-black font-medium py-8;
+    @apply text-[14px] 2xl:text-[20px] text-black font-medium pt-[33px] pb-[77px] font-['ProximaNovaMedium'];
 }
 
 .second-right-part button {
-    @apply bg-[#FF852A] text-white rounded-[12px] px-4 py-2 w-fit text-[12px];
+    @apply bg-[#FF852A] text-white rounded-[12px] px-4 w-fit text-[18px] font-['ProximaNovaRegular'] items-center flex justify-center;
+    width: 298px;
+    height: 61px;
 }
 
 .how-work-wrap {
-    @apply flex bg-no-repeat bg-contain my-12 justify-center items-center;
+    @apply flex bg-no-repeat bg-contain my-12 justify-center items-center 2xl:w-[1137px] 2xl:h-[911px];
     background-image: url('../Image//work-pg.png');
-    width: 1000px;
-    height: 580px;
+    /* width: 1000px; */
+    /* height: 580px; */
+
 }
-.how-work-content{
-    width: 900px;
-    @apply flex flex-col justify-center ;
+
+.how-work-content {
+    /* width: 900px; */
+    @apply flex flex-col justify-center;
 }
-.iphone{
-    @apply flex ;
-    height: 550px;
-    width: 400px;
+
+.iphone {
+    @apply flex 2xl:w-[429px] 2xl:h-[845px];
+    /* height: 550px;
+    width: 400px; */
+    
 }
-.content-heading{
-    @apply flex text-white font-bold capitalize text-[50px] px-4; 
+
+.content-heading {
+    @apply flex text-white font-bold capitalize text-[50px] 2xl:text-[71px] font-['ProximaNovaBold'] px-4;
 }
-.content-para{
-    @apply flex  font-normal  text-[14px] py-2 my-2 rounded-lg pl-4; 
+
+.content-para {
+    @apply flex font-normal text-[14px] 2xl:text-[20px] font-['ProximaNovaRegular'] py-2 my-2 rounded-lg pl-4 w-[474pxs];
     letter-spacing: 0.8px;
 
 }
-.animation-third{
-    @apply flex flex-col justify-center items-center relative left-16 -top-12;
-}
-.circle{
-    @apply w-4 h-4 border border-dashed rounded-[50%] border-[#FF852A] cursor-pointer;
-}
-.line{
-    @apply w-1 h-32  border-r-[1px] border-solid border-[#FF852A];
 
+.animation-third {
+    @apply flex flex-col justify-center items-center absolute right-[325px]  -mt-8 ;
 }
 
+.circle {
+    @apply w-[31px] h-[31px] border border-dashed rounded-[50%] border-[#FF852A] cursor-pointer;
+}
 
+.line {
+    @apply w-1 h-[200px] border-r-[1px] border-solid border-[#FF852A];
 
-
-
-
+}
 
 
 
@@ -169,26 +170,29 @@
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
+}
+
+@-webkit-keyframes fade {
     from {
-      opacity: 0.4;
+        opacity: 0.4;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes fade {
+}
+
+@keyframes fade {
     from {
-      opacity: 0.4;
+        opacity: 0.4;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  .prev:hover,
+}
+
+.prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
