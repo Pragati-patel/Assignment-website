@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './styles.css'
 import logo from '../Image/LogoHeader.svg'
 import googlePlay from '../Image/googlePlay.svg'
@@ -97,7 +97,7 @@ export default function Home() {
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 <button><img src={buttonIcon} className='pr-2' />HOW DOES IT WORK?</button>
             </div>
-            
+
         </div>
 
         <div className='flex w-full'>
