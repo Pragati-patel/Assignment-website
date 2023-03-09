@@ -76,7 +76,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col absolute right-[45px] top-[388px] 2xl:top-[430px] items-center'>
+            <div className='flex flex-col absolute right-[110px] top-[388px] 2xl:top-[430px] items-center'>
                 <div className='flex mr-6 mb-2'>
                     <p className='text-white flex mr-2'>01</p>
                 <div className='h-[36px] border-r-2 border-white'></div>
@@ -93,7 +93,7 @@ export default function Home() {
                 <img src={secondSection} className='bg-transparent' alt='bg' />
             </div>
             <div className='second-right-part'>
-                <h1>Get The Best Deals Together!</h1>
+                <h1>Get The <span className='underline decoration-[#ff862a8e]'> Best Deals </span>Together!</h1>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 <button><img src={buttonIcon} className='pr-2' />HOW DOES IT WORK?</button>
             </div>
@@ -102,13 +102,13 @@ export default function Home() {
         <div className='flex w-full'>
             <div className='how-work-wrap'>
                 <div className='how-work-content'>
-                    <div className='flex flex-col 2xl:pl-[265px] relative'>
+                    <div className='flex flex-col 2xl:pl-[225px] relative'>
 
                         <h1 className='content-heading'>
                             How It Works?
                         </h1>
                         {list.map((item, index) => {
-                            return <p className={`content-para ${index === activePoint ? `w-[674px] pr-32 text-black bg-white relative z-[4]` : `bg-transparent text-white pr-12 w-[474px]`}`}>{item}</p>
+                            return <p className={`content-para ${index === activePoint ? `w-[744px] pr-[300px] text-black bg-white relative z-[4]` : `bg-transparent text-white pr-12 w-[474px]`}`}>{item}</p>
                         })}
                     </div>
                 </div>
