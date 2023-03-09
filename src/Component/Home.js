@@ -113,7 +113,7 @@ export default function Home() {
                         })}
                     </div>
                 </div>
-                <div className='iphone absolute right-[468px] z-10'><img src={iphone} alt='iphone' /></div>
+                <div className='iphone 2xl:absolute 2xl:right-[468px] z-10'><img src={iphone} alt='iphone' /></div>
                 <div className='animation-third'>
                     {[1, 2, 3, 4].map((item, index) => {
                         return <>

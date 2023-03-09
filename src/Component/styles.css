@@ -127,7 +127,7 @@
 }
 
 .iphone {
-    @apply flex 2xl:w-[429px] 2xl:h-[845px];
+    @apply hidden 2xl:flex 2xl:w-[429px] 2xl:h-[845px];
     /* height: 550px;
     width: 400px; */
     
@@ -144,7 +144,7 @@
 }
 
 .animation-third {
-    @apply flex flex-col justify-center items-center absolute right-[325px]  -mt-8 ;
+    @apply 2xl:flex hidden flex-col justify-center items-center absolute 2xl:right-[325px]  2xl:-mt-8 ;
 }
 
 .circle {
